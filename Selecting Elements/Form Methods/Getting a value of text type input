@@ -1,0 +1,17 @@
+<form id="myForm">
+        Task : <input type="text" name="task" placeholder="add task"> 
+        <input type="submit" value="Add new Task">
+    </form>
+    
+    
+    
+    
+    <script type="text/javascript">
+ 
+document.getElementById('myForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            var tempValue = document.querySelector('input[name="task"]').value;
+            console.log(tempValue);
+        })
+        
+        </script>
