@@ -1,0 +1,38 @@
+ <div class = "customer_group">
+
+<input type="radio" id="CustomerFormParticular" onclick="javascript:yesnoCheck();" name="customer[note][Particular or Company]" value="Particular" /> Particular<br>
+
+<input type="radio" id="CustomerFormCompany" onclick="javascript:yesnoCheck();" name="customer[note][Particular or Company]" value="Company" /> Company
+
+  </div>
+  
+  <div id="green">
+  	    <div class="allergies">
+        <label for="company"></label>
+        <input id="company" type="text" name="customer[note][Company]" placeholder="Company Name" />
+      </div>
+  
+  <div class="allergies">
+        <label for="ICO"></label>
+        <input id="ICO" type="text" name="customer[note][ICO]" placeholder="ICO" />
+      </div>
+  
+  <div class="allergies">
+        <label for="DIC"></label>
+        <input id="DIC" type="text" name="customer[note][ICO]" placeholder="DIC" />
+      </div>
+    
+  </div>
+
+
+{% endstyle %}
+
+<script>
+  
+  function yesnoCheck() {
+    if (document.getElementById('CustomerFormCompany').checked) {
+        document.getElementById('green').style.display = 'block';
+    }
+    else document.getElementById('green').style.display = 'none';
+  }
+</script>
