@@ -1,0 +1,5 @@
+fetch("https://ipinfo.io/json?token=9b60038d678c77").then(
+  (response) => response.json()
+).then(
+  (jsonResponse) => console.log(jsonResponse.ip, jsonResponse.country)
+)
